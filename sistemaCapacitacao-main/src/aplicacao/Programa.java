@@ -10,8 +10,11 @@ public class Programa {
         isabela.setOrgao("ANVISA");
         isabela.setLotacao("Brasilia");
         isabela.setEmail("isabela@gmail.");
-
+        isabela.setNome("João");
         System.out.println("Servidor: "+ isabela.getNome());
+        System.out.printf("R$ %.2f: ",isabela.calcularSalarioHorasExtras(10,5.60));
+
+
 
     }
 }
