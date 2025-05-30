@@ -26,7 +26,6 @@ public class ServidorPublico {
 
         private double horasExtras;
 
-
         public String getEmail() {
                 return email;
         }
@@ -143,6 +142,18 @@ public class ServidorPublico {
                 double salarioMensal = salario + (horasTrabalhadas*valorHora);
                 horasExtras = salarioMensal;
                 return (salarioMensal);
-
         }
+        public double calcularSalario (double salario){
+                double novoSalario = salario + getHorasExtras();
+                return novoSalario;
+        }
+        public double calcularNumeros (double... numeros){
+                double soma = 0;
+                for (double numero : numeros){
+                        soma += numeros;
+                }
+                System.out.println(soma);
+                return soma;
+        }
+
 }
