@@ -1,6 +1,21 @@
 package entidades;
 
 public class ServidorPublico {
+
+        public ServidorPublico(){}
+
+        public ServidorPublico(int matricula, String nome) {
+                this.matricula = matricula;
+                this.nome = nome;
+        }
+        public ServidorPublico(int matricula, String nome, String cargo){
+                this.matricula = matricula;
+                this.nome = nome;
+                this.cargo = cargo;
+        }
+
+
+
         private int matricula;
         private String nome;
         private String foto;
@@ -15,6 +30,14 @@ public class ServidorPublico {
         private String cpf;
         private String lotacao;
         private String email;
+        private double horasExtras;
+
+
+        public ServidorPublico(){};
+
+        public ServidorPublico(int matricula, String nome)
+
+
 
         public double getHorasExtras() {
                 return horasExtras;
